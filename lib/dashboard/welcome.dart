@@ -127,6 +127,179 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   ),
                 ),
               ),
+
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 10),
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 1,
+
+                      child: Container(
+                        height: MediaQuery.of(context).size.height * .25,
+
+                        decoration: BoxDecoration(
+                          color: Color(0xfffed271),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Stack(
+                            alignment: Alignment.center,
+
+                            children: [
+                              CircleAvatar(
+                                radius: 50,
+
+                                backgroundImage: AssetImage(
+                                  'assets/pandamart.jpg',
+                                ),
+                              ),
+
+                              Positioned(
+                                bottom: 15,
+                                left: 0,
+
+                                child: Text(
+                                  'pandmart',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: 'Bold',
+                                    fontSize: 18,
+                                  ),
+                                ),
+                              ),
+
+                              Positioned(
+                                bottom: 0,
+                                left: 0,
+                                child: Text(
+                                  'panda20 for 20% off',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w500,
+                                    height: 1,
+                                    fontFamily: 'Medium',
+                                    fontSize: 14,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+
+                    SizedBox(width: 8),
+
+                    Expanded(
+                      flex: 1,
+                      child: Column(
+                        children: [
+                          Container(
+                            height: MediaQuery.of(context).size.height * .15,
+                            width: double.infinity,
+
+                            decoration: BoxDecoration(
+                              color: Color(0xffef9fc4),
+                              borderRadius: BorderRadius.circular(10),
+
+                              image: DecorationImage(
+                                image: AssetImage('assets/food.jpg'),
+                              ),
+                            ),
+
+                            child: Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+
+                                children: [
+                                  Text(
+                                    'Pick-Uo',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontFamily: 'Bold',
+                                      fontSize: 18,
+                                    ),
+                                  ),
+
+                                  Text(
+                                    'Upto 50% off',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontFamily: 'Bold',
+                                      fontSize: 18,
+                                      height: 1,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+
+                          SizedBox(height: 5),
+
+                          Container(
+                            height: MediaQuery.of(context).size.height * .1,
+
+                            width: double.infinity,
+
+                            decoration: BoxDecoration(
+                              color: Color(0xff85bfff),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+
+                            child: Padding(
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+
+                                children: [
+                                  Text(
+                                    'Shops',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontFamily: 'Bold',
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Text(
+                                    'Everyday assentials',
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.w500,
+                                      height: 1,
+                                      fontFamily: 'Medium',
+                                      fontSize: 14,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+
+                    Text('Your daily deals',style: TextStyle(color: Color(0xff323232),fontSize: 15,fontFamily: 'Bold'),
+                    
+                    ),
+
+                    Container(
+
+                      child: ListView.builder(itemBuilder: (context,index){
+
+
+                        
+                      }),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
